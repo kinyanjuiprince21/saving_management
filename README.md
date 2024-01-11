@@ -118,8 +118,8 @@ The project uses MySQL as the database. Configure the database connection in `ap
 
 ```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/{databaseName}
-spring.datasource.username=root
-spring.datasource.password=rootpassword
+spring.datasource.username={yourUsername}
+spring.datasource.password={yourPassword}
 ```
 
 ## Error Handling and Validation
