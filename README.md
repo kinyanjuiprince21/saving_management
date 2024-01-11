@@ -134,8 +134,8 @@ The project includes comprehensive unit tests covering the functionality of each
 
 API documentation is provided using both Postman and Swagger. Explore the API using the provided collections and Swagger UI.
 
-- [Postman Collection](link-to-postman-collection)
-- [Swagger UI](http://localhost:8080/swagger-ui/index.html)
+- [Postman Collection](https://github.com/kinyanjuiprince21/saving_management/blob/30baa2b0b1ded8f297f4cf4c8495cf92cb42d6c9/src/main/resources/json)
+- [Swagger UI](https://github.com/kinyanjuiprince21/saving_management/blob/30baa2b0b1ded8f297f4cf4c8495cf92cb42d6c9/src/main/resources/apis)
 
 ## Deployment
 
