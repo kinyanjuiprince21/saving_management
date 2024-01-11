@@ -1,0 +1,36 @@
+openapi: "3.0.3"
+info:
+  title: "saving_management API"
+  description: "saving_management API"
+  version: "1.0.0"
+servers:
+  - url: "https://saving_management"
+paths:
+  /v1/customer/save:
+    post:
+      summary: "POST v1/customer/save"
+      operationId: "addCustomer"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: "string"
+        required: true
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                type: "object"
+  /v1/customers:
+    get:
+      summary: "GET v1/customers"
+      operationId: "getCustomers"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                type: "object"

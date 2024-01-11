@@ -1,0 +1,61 @@
+openapi: "3.0.3"
+info:
+  title: "saving_management API"
+  description: "saving_management API"
+  version: "1.0.0"
+servers:
+  - url: "https://saving_management"
+paths:
+  /v1/saving/save:
+    post:
+      summary: "POST v1/saving/save"
+      operationId: "save"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: "array"
+              items:
+                $ref: "#/components/schemas/Map"
+        required: true
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                type: "object"
+  /v1/customer/savings:
+    get:
+      summary: "GET v1/customer/savings"
+      operationId: "getTotalSavingsPerCustomer"
+      parameters:
+        - name: "customerId"
+          in: "query"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                type: "object"
+  /v1/customers/savings:
+    get:
+      summary: "GET v1/customers/savings"
+      operationId: "getTotalSavingsAcross"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                type: "object"
+components:
+  schemas:
+    Map:
+      type: "object"
+      properties: { }
