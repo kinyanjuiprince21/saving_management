@@ -5,12 +5,9 @@ import com.presta.saving_management.controllers.SavingController;
 import com.presta.saving_management.dto.CustomerDTO;
 import com.presta.saving_management.models.Customer;
 import com.presta.saving_management.models.Saving;
-import com.presta.saving_management.repositories.SavingRepo;
-import com.presta.saving_management.services.CustomerService;
 import com.presta.saving_management.services.SavingService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.mockito.stubbing.Answer;
@@ -22,8 +19,8 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.*;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
@@ -38,8 +35,6 @@ public class SavingControllerTest {
     private ObjectMapper objectMapper;
     @MockBean
     private SavingService savingService;
-    @Mock
-    private SavingRepo savingRepo;
 
 
     @Test
