@@ -72,7 +72,6 @@ savings-management/
 |                       |-- SavingControllerTest.java
 |                       |-- SavingsManagementApplicationTests.java
 |                       |-- TransactionControllerTest.java
-|-- HELP.md
 |-- LICENSE
 |-- mvnw
 |-- mvnw.cmd
